@@ -14,7 +14,7 @@ app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 load_dotenv(path.join(basedir, '.env'))
 
-
+#configurations for our app
 app.config['FLASK_APP']= environ.get('FLASK_APP')
 app.config['SECRET_KEY']= environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI']= environ.get('CLEARDB_DATABASE_URL')
