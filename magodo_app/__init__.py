@@ -17,7 +17,7 @@ load_dotenv(path.join(basedir, '.env'))
 
 
 app.config['SECRET_KEY']= environ.get('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI']= environ.get('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI']= environ.get('CLEARDB_DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
