@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class= "formwrapper">
+    <form method="POST">
+        {{form.hidden_tag()}}
+       <div class="form-group">
+           {{form.email.label(class="form-control-label")}}
+           {{form.email(class="form-control form-control-lg")}}
+       </div>
+        <div class="form-group">
+            {{form.username.label(class="form-control-label")}}
+            {{form.username(class="form-control form-control-lg")}}
+        </div>
+       <div class="form-group">
+           {{form.password.label(class="form-control-label")}}
+           {{form.password(class="form-control form-control-lg")}}
+       </div>
+     <div class="form-group">
+         {{form.pass_confirm.label(class="form-control-label")}}
+         {{form.pass_confirm(class="form-control form-control-lg")}}
+     </div>
+
+      <div class="form-group">
+           {{form.full_name.label(class="form-control-label")}}
+           {{form.full_name(class="form-control form-control-lg")}}
+       </div>
+
+       <div class="form-group">
+           {{form.phone_number.label(class="form-control-label")}}
+           {{form.phone_number(class="form-control form-control-lg")}}
+       </div>
+
+       <div class="form-group">
+           {{form.house_type.label(class="form-control-label")}}
+           {{form.house_type(class="form-control form-control-lg")}}
+       </div>
+
+       <div class="form-group">
+           {{form.house_number.label(class="form-control-label")}}
+           {{form.house_number(class="form-control form-control-lg")}}
+       </div>
+
+       <div class="form-group">
+           {{form.street_name.label(class="form-control-label")}}
+           {{form.street_name(class="form-control form-control-lg")}}
+       </div>
+
+       <div class="form-group">
+           {{form.house_describe.label(class="form-control-label")}}
+           {{form.house_describe(class="form-control form-control-lg")}}
+       </div>
+        {{form.submit(class="btn btn-outline-success my-2 my-sm-0")}}
+
+
+
+    </form>
+
+
+</div>
+
+
+
+{% endblock %}
