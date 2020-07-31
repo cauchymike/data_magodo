@@ -20,6 +20,7 @@ app.config['SECRET_KEY']= environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI']= environ.get('CLEARDB_DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = environ.get('SQLALCHEMY_TRACK_MODIFICATIONS')
 app.config['DEBUG']=environ.get('DEBUG')
+app.config['FLASK_ENV'] = environ.get('FLASK_ENV')
 
 
 
